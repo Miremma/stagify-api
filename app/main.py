@@ -49,10 +49,10 @@ app.mount("/uploads", StaticFiles(directory="uploads"), name="uploads")
 app.add_middleware(
     CORSMiddleware,
     allow_origins=[
-        "http://localhost:3000",   # React port 3000
-        "http://localhost:5173",   # React port 5173 (Vite)
-        "https://stagify-front-production.up.railway.app"  # React en prod
-    ],
+    "http://localhost:3000",
+    "http://localhost:5173",
+    "https://stagify-front-production.up.railway.app"
+],
     allow_credentials=True,        # autorise les cookies et tokens
     allow_methods=["*"],           # tous les méthodes HTTP
     allow_headers=["*"],           # tous les headers
