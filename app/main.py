@@ -30,13 +30,7 @@ app = FastAPI(
     lifespan=lifespan
 )
 )
-app.add_middleware(
-    CORSMiddleware,
-    allow_origins=["https://stagify-front-production.up.railway.app"],  # ton front
-    allow_credentials=True,
-    allow_origins=["*"]
-    allow_methods=["*"],
-    allow_headers=["*"],
+
 
 
 # ════════════════════════════════════════
